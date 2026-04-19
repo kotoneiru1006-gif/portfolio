@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Portfolio | Minimal & Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap');
+        
+        body {
+            font-family: 'Helvetica Neue', 'Noto Sans JP', sans-serif;
+            background-color: #ffffff;
+            color: #111111;
+        }
+
+        .work-item {
+            transition: opacity 0.4s ease;
+        }
+
+        .work-item:hover {
+            opacity: 0.7;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .nav-link {
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #999;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* フォームの入力フォーカス */
+        input:focus, textarea:focus {
+            border-color: #111;
+            outline: none;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- ナビゲーション -->
+    <nav class="fixed w-full top-0 bg-white/90 backdrop-blur-md z-50 border-b border-gray-50">
+        <div class="max-w-5xl mx-auto px-6 py-6 flex justify-between items-center">
+            <a href="#" class="text-sm font-bold tracking-[0.2em] uppercase">Portfolio.</a>
+            <div class="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.2em]">
+                <a href="#about" class="nav-link">About / 自己紹介</a>
+                <a href="#work" class="nav-link">Work / 実績</a>
+                <a href="#pricing" class="nav-link">Pricing / 料金</a>
+                <a href="#contact" class="nav-link font-bold">Contact / 依頼</a>
+            </div>
+            <div class="md:hidden text-[10px] font-bold tracking-widest uppercase">Menu</div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main class="max-w-5xl mx-auto px-6">
+        
+        <!-- 1. 自己紹介 (Hero & About) -->
+        <section id="about" class="pt-48 pb-32">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-7">
+                    <header class="mb-12">
+                        <h1 class="text-3xl md:text-5xl font-light leading-[1.4] mb-8">
+                            映像で、想いを<br>
+                            カタチにする。
+                        </h1>
+                        <div class="flex items-center space-x-4">
+                            <span class="w-8 h-[1px] bg-black"></span>
+                            <p class="text-gray-500 text-[11px] tracking-[0.3em] uppercase font-medium">Video Editor / Creator</p>
+                        </div>
+                    </header>
+                    <div class="text-sm leading-loose text-gray-600 space-y-6">
+                        <p>
+                            はじめまして。動画編集者の[あなたの名前]です。
+                            視聴者の記憶に残るリズムと、ブランドの意図を汲み取った「伝わる」映像制作を行っています。
+                        </p>
+                        <p>
+                            YouTube、企業VP、SNS広告など、目的に合わせた柔軟な編集が可能です。
+                            単なる編集作業ではなく、プロジェクトの成功を共に目指すパートナーとしてサポートいたします。
+                        </p>
+                    </div>
+                    <div class="mt-10 flex gap-4">
+                        <span class="text-[10px] border border-gray-200 px-3 py-1 rounded-full text-gray-400">Premiere Pro</span>
+                        <span class="text-[10px] border border-gray-200 px-3 py-1 rounded-full text-gray-400">After Effects</span>
+                        <span class="text-[10px] border border-gray-200 px-3 py-1 rounded-full text-gray-400">DaVinci Resolve</span>
+                    </div>
+                </div>
+                <div class="md:col-span-5">
+                    <div class="aspect-[3/4] bg-gray-100 overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+                        <!-- あなたのプロフィール写真などに差し替え -->
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" alt="Profile" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 作品紹介 (Work) -->
+        <section id="work" class="border-t border-gray-100">
+            <div class="mb-20">
+                <p class="text-[10px] uppercase tracking-[0.5em] text-gray-400 mb-4">Selected Works</p>
+                <h2 class="text-2xl font-bold">制作実績</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20">
+                <!-- プロジェクト 01 -->
+                <a href="#" class="work-item group block">
+                    <div class="aspect-video bg-gray-50 mb-6 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1492691523567-61723c295fe3?auto=format&fit=crop&q=80&w=1200" alt="実績1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+                        <h3 class="text-xs font-bold uppercase tracking-widest text-black">Commercial Movie</h3>
+                        <p class="text-[9px] text-gray-400 tracking-tighter uppercase font-bold">Promotion</p>
+                    </div>
+                </a>
+                <!-- プロジェクト 02 -->
+                <a href="#" class="work-item group block">
+                    <div class="aspect-video bg-gray-50 mb-6 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&q=80&w=1200" alt="実績2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex justify-between items-center border-b border-gray-100 pb-4">
+                        <h3 class="text-xs font-bold uppercase tracking-widest text-black">Vlog / YouTube</h3>
+                        <p class="text-[9px] text-gray-400 tracking-tighter uppercase font-bold">YouTube</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. 料金体制 (Pricing) -->
+        <section id="pricing" class="border-t border-gray-100">
+            <div class="mb-20">
+                <p class="text-[10px] uppercase tracking-[0.5em] text-gray-400 mb-4">Pricing Plan</p>
+                <h2 class="text-2xl font-bold">料金の目安</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Plan 1 -->
+                <div class="p-8 border border-gray-100 hover:border-black transition-colors">
+                    <h3 class="text-sm font-bold mb-2">Short Video</h3>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest mb-6 border-b pb-4">SNS / TikTok / Reels</p>
+                    <p class="text-2xl font-light mb-6">¥5,000<span class="text-xs">〜 / 本</span></p>
+                    <ul class="text-[11px] text-gray-600 space-y-3">
+                        <li>・素材 60秒以内</li>
+                        <li>・テロップ入れ</li>
+                        <li>・BGM・効果音調整</li>
+                        <li>・修正 2回まで無料</li>
+                    </ul>
+                </div>
+                <!-- Plan 2 -->
+                <div class="p-8 border border-black">
+                    <h3 class="text-sm font-bold mb-2">YouTube Edit</h3>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest mb-6 border-b pb-4">Standard YouTube Content</p>
+                    <p class="text-2xl font-light mb-6">¥15,000<span class="text-xs">〜 / 本</span></p>
+                    <ul class="text-[11px] text-gray-600 space-y-3">
+                        <li>・完成 10分程度まで</li>
+                        <li>・フルテロップ可</li>
+                        <li>・画像挿入</li>
+                        <li>・カット・整音込み</li>
+                    </ul>
+                </div>
+                <!-- Plan 3 -->
+                <div class="p-8 border border-gray-100 hover:border-black transition-colors">
+                    <h3 class="text-sm font-bold mb-2">High-End / Promotion</h3>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest mb-6 border-b pb-4">Corporate / Advertising</p>
+                    <p class="text-2xl font-light mb-6">¥50,000<span class="text-xs">〜 / 本</span></p>
+                    <ul class="text-[11px] text-gray-600 space-y-3">
+                        <li>・構成案の作成</li>
+                        <li>・高度なAfter Effects演出</li>
+                        <li>・カラーグレーディング</li>
+                        <li>・素材無制限</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="mt-8 text-[10px] text-gray-400 text-center">※ 納期や内容により変動いたします。まずはお気軽にご相談ください。</p>
+        </section>
+
+        <!-- 4. 問い合わせ・依頼フォーム (Contact & Form) -->
+        <section id="contact" class="border-t border-gray-100">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-16">
+                <div class="md:col-span-4">
+                    <p class="text-[10px] uppercase tracking-[0.5em] text-gray-400 mb-4">Contact & Inquiry</p>
+                    <h2 class="text-2xl font-bold mb-8">お仕事のご依頼</h2>
+                    <p class="text-sm text-gray-600 leading-loose">
+                        制作のご相談、お見積もりのご依頼は、右記のフォームまたは各SNSのDMよりお気軽にご連絡ください。<br><br>
+                        通常、1〜2営業日以内にご返信いたします。
+                    </p>
+                    <div class="mt-8 flex space-x-6 text-gray-400">
+                        <a href="#" class="hover:text-black transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="hover:text-black transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-8">
+                    <form action="#" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-bold uppercase tracking-widest">Name / お名前</label>
+                                <input type="text" placeholder="山田 太郎" class="w-full border-b border-gray-200 py-3 text-sm placeholder-gray-300">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-bold uppercase tracking-widest">Email / メールアドレス</label>
+                                <input type="email" placeholder="sample@example.com" class="w-full border-b border-gray-200 py-3 text-sm placeholder-gray-300">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold uppercase tracking-widest">Category / 依頼種別</label>
+                            <select class="w-full border-b border-gray-200 py-3 text-sm text-gray-400 bg-transparent">
+                                <option value="">選択してください</option>
+                                <option value="youtube">YouTube編集</option>
+                                <option value="short">ショート動画制作</option>
+                                <option value="promotion">企業プロモーション</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] font-bold uppercase tracking-widest">Message / ご相談内容</label>
+                            <textarea rows="5" placeholder="ご予算、納期、参考URLなどをご記入ください" class="w-full border border-gray-100 p-4 text-sm placeholder-gray-300 mt-2 bg-gray-50/50"></textarea>
+                        </div>
+                        <button type="submit" class="bg-black text-white text-[10px] font-bold uppercase tracking-[0.3em] px-12 py-5 hover:bg-gray-800 transition-all w-full md:w-auto">
+                            Send Request / 送信する
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="max-w-5xl mx-auto px-6 py-16 flex flex-col md:flex-row justify-between items-center text-[9px] uppercase tracking-[0.3em] text-gray-400 border-t border-gray-50">
+        <div class="mb-6 md:mb-0">&copy; 2024 Your Name. Portfolio</div>
+        <div class="flex space-x-12">
+            <a href="#" class="hover:text-black">Instagram</a>
+            <a href="#" class="hover:text-black">YouTube</a>
+            <a href="#" class="hover:text-black">X (Twitter)</a>
+        </div>
+    </footer>
+
+</body>
+</html>
